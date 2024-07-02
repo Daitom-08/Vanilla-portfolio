@@ -1,15 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="testClass"> Test is testing</h1>
-        <script src="script.js">
-          
-        </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dairo Tomiwa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Dairo Tomiwa</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Goals">Goals</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Dairo Tomiwa</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Goals" onclick="toggleMenu()">Goals</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Dairo Tomiwa profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hey! I'm</p>
+        <h1 class="title" data-testid="slackDisplayName" >Tomiwa Dairo</h1>
+        <p class="section__text__p2">An Aspiring Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Tomiwa-Quadri-Dairo-cv-master.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/tomiwa-dairo-55027416b/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/maximus-kai'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More About</p>
+      <h1 class="title">Me!!! I'm Amazing!!!</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            data-testid="slackProfilePicture"
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/Goals.png"
+                alt="Goals icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Mechatronics Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            I'm interested in everything technology.
+            I'm currently learning more about fullstack web development.
+            I'm looking to collaborate on web development project using HTML, CSS and Javascript, and I'm currently on an internship at HNG!
+            you can also learn so much from them. they have courses <a class="cost-bold" data-testid="hngLink" href="http://hng.tech/learn">Here</a> for grabs for as low as <span class="cost-bold">₦9,500</span>  
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Goals'"
+      />
+    </section>
+    <section id="Goals">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Goals</h1>
+      <div class="Goals-details-container">
+        <h1 class="center-text">I already metioned how I plan to conquer the world with my mad genius ideas already, right? if you missed it, then Here's what my 2-year tech goal looks like.</h1>
+        <br>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="Goals-sub-title">1. Master Frontend Technologies</h2>
+            <p><strong>Objective:</strong> Deepen my knowledge and expertise in frontend development technologies such as React.js, and Next.js.</p>
+            <h2><strong> . . .</strong></h2>
+            
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Goals icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Complete advanced courses</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Goals icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Build projects</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Goals icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Contribute to open-source projects</h3>
+                  
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Goals icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="Goals-sub-title">2. Develop Full-Stack Proficiency</h2>
+            <p><strong>Objective:</strong> Expand my skillset to include backend development, focusing on Node.js, Express.js, and database management systems like MongoDB and SQL.</p>
+            <h2><strong> . . .</strong></h2>
+            
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Goals icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Enroll in full-stack development bootcamps</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Goals icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>participate in hackathons</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Goals icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>work on full-stack projects.</h3>
+                  
+                </div>
+              </article>
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a data-testid="slackEmail" href="mailto:examplemail@gmail.com">Tomiwadairo@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <h3 class="center-text">Here are some important links you can follow to learn about some awesome technology for SEO and Web scraping</h3>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a data-testid="keywordLink" href="http://keyword.dog/">(Keyword)</a></li>
+            <li><a data-testid="scrapeanywebLink" href="http://scrapeanyweb.site/">(ScrapeAnyWebLink)</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; <span data-testid="currentTimeUTC" id="time"></span> <span data-testid="currentDay" id="day"></span> 2023 Tomiwa Dairo. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
